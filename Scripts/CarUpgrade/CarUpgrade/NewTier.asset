@@ -1,0 +1,651 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8adb0568acd0e78408bb7a2758a14f7e, type: 3}
+  m_Name: NewTier
+  m_EditorClassIdentifier: 
+  car:
+  - NWH_Car: {fileID: 4701759103139149138, guid: e3da080c575bbb142bb6b57d2c6d3a6c, type: 3}
+    NWH_Wheels:
+    - {fileID: 3747571257669126986, guid: 9ed8f6a71fe2f744eb68a485fc7a030d, type: 3}
+    - {fileID: 2282445493426695540, guid: b50c705aabfca6e4681f1ab360b1c054, type: 3}
+    - {fileID: 3133619264383201254, guid: cf84d2e4cf72f554282ae838af32650b, type: 3}
+    - {fileID: 3518361155342518621, guid: d3a0d96a95b90324fae2b09ada9c41b4, type: 3}
+    carNumber: 0
+    EngCount: 0
+    SuspCount: 0
+    TBCount: 0
+    EngImg:
+    - {fileID: 1379154969529120985, guid: 13f6de98b2a4ca14e979b60bb700a2b1, type: 3}
+    - {fileID: 1891371299725717589, guid: 3d547c955f1c5544f92138c73ed3b611, type: 3}
+    - {fileID: 4418043616002158845, guid: c217e2c5a68de7e4da937f5371d7b017, type: 3}
+    SuspImg:
+    - {fileID: 8202400935151591431, guid: a0a5f935a97f42641ae2c348e5c9da00, type: 3}
+    - {fileID: 1103425251903713925, guid: 29fffde8b3783374f955e62d7f44ebe5, type: 3}
+    - {fileID: 2305854311451901578, guid: e54eeada7f387114db5fc8f257f029f5, type: 3}
+    TBImg:
+    - {fileID: 3903747802220305672, guid: 1f72cf71dddd34448b39491e04d8f34a, type: 3}
+    - {fileID: 911177852994939295, guid: 977a819dabac27c4d994c579fe9f5bc2, type: 3}
+    - {fileID: 5223996410508918388, guid: 98fe773d5feca3640bdb83653961730e, type: 3}
+    EngBtn:
+    - {fileID: 5074036955748415152, guid: c2045e3a9291d444284e06320c79a76c, type: 3}
+    - {fileID: 3862166477037115784, guid: 9ce28ce900c5c924b80b4563ff852477, type: 3}
+    - {fileID: 183878658332200520, guid: b87c2762174f24241bf883a626715c53, type: 3}
+    SuspBtn:
+    - {fileID: 1553931304197720966, guid: 4dd5e714154bc164e844f2da373f55e5, type: 3}
+    - {fileID: 7776187312534287506, guid: 517570aaf4a05444189845423a28884c, type: 3}
+    - {fileID: 425894805728392170, guid: f2cef1b132622d8429bcebe8989a6851, type: 3}
+    TBBtn:
+    - {fileID: 6654609088113677278, guid: f1526b123420b9c4bb336e4fa5b9aa47, type: 3}
+    - {fileID: 8154654688974809759, guid: 8bf273c957f4f2b418fb5c95e5a1f494, type: 3}
+    - {fileID: 7792875670824864850, guid: 51260e69578cb864f89ed03f836d7b31, type: 3}
+    suspension:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      BrakeTorque: 150
+      Handling: 1
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 2000
+      Coins: 3000
+      Daimonds: 0
+      BrakeTorque: 100
+      Handling: 2
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7500
+      Coins: 5000
+      Daimonds: 0
+      BrakeTorque: 50
+      Handling: 3
+      Upgraded: 
+    engine:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      TopSpeed: 0.5
+      Acceleration: 50
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      TopSpeed: 0.2
+      Acceleration: 100
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      TopSpeed: 0.3
+      Acceleration: 150
+      Upgraded: 
+    tyre:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.05
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 2000
+      Coins: 3000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.05
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7000
+      Coins: 5000
+      Daimonds: 0
+      slipvalue: 0.3
+      gripvalue: 0.3
+      springlength: 0.03
+      Handling: 0.05
+      Upgraded: 
+  - NWH_Car: {fileID: 2766649041800999473, guid: 0486f4f896249f5409c3143d0f7ded66, type: 3}
+    NWH_Wheels:
+    - {fileID: 4494497859497102210, guid: 173d122d333975b4c922541f70663c1d, type: 3}
+    - {fileID: 16120473227351468, guid: b6eddff8339f40142b7bbd734e532672, type: 3}
+    - {fileID: 6921441759941350612, guid: 67a41b4b419c29944a2ee1e198dfa1a8, type: 3}
+    - {fileID: 5715978748947298498, guid: 8f50e169c3ceebb4fb3e11afd2c41f28, type: 3}
+    carNumber: 1
+    EngCount: 0
+    SuspCount: 0
+    TBCount: 0
+    EngImg:
+    - {fileID: 1379154969529120985, guid: 13f6de98b2a4ca14e979b60bb700a2b1, type: 3}
+    - {fileID: 1891371299725717589, guid: 3d547c955f1c5544f92138c73ed3b611, type: 3}
+    - {fileID: 4418043616002158845, guid: c217e2c5a68de7e4da937f5371d7b017, type: 3}
+    SuspImg:
+    - {fileID: 8202400935151591431, guid: a0a5f935a97f42641ae2c348e5c9da00, type: 3}
+    - {fileID: 1103425251903713925, guid: 29fffde8b3783374f955e62d7f44ebe5, type: 3}
+    - {fileID: 2305854311451901578, guid: e54eeada7f387114db5fc8f257f029f5, type: 3}
+    TBImg:
+    - {fileID: 3903747802220305672, guid: 1f72cf71dddd34448b39491e04d8f34a, type: 3}
+    - {fileID: 911177852994939295, guid: 977a819dabac27c4d994c579fe9f5bc2, type: 3}
+    - {fileID: 5223996410508918388, guid: 98fe773d5feca3640bdb83653961730e, type: 3}
+    EngBtn:
+    - {fileID: 5074036955748415152, guid: c2045e3a9291d444284e06320c79a76c, type: 3}
+    - {fileID: 3862166477037115784, guid: 9ce28ce900c5c924b80b4563ff852477, type: 3}
+    - {fileID: 183878658332200520, guid: b87c2762174f24241bf883a626715c53, type: 3}
+    SuspBtn:
+    - {fileID: 1553931304197720966, guid: 4dd5e714154bc164e844f2da373f55e5, type: 3}
+    - {fileID: 7776187312534287506, guid: 517570aaf4a05444189845423a28884c, type: 3}
+    - {fileID: 425894805728392170, guid: f2cef1b132622d8429bcebe8989a6851, type: 3}
+    TBBtn:
+    - {fileID: 6654609088113677278, guid: f1526b123420b9c4bb336e4fa5b9aa47, type: 3}
+    - {fileID: 8154654688974809759, guid: 8bf273c957f4f2b418fb5c95e5a1f494, type: 3}
+    - {fileID: 7792875670824864850, guid: 51260e69578cb864f89ed03f836d7b31, type: 3}
+    suspension:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      BrakeTorque: 1
+      Handling: 0.1
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      BrakeTorque: 2
+      Handling: 0.2
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      BrakeTorque: 3
+      Handling: 0.3
+      Upgraded: 
+    engine:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      TopSpeed: 0.5
+      Acceleration: 0
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      TopSpeed: 0.5
+      Acceleration: 0
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      TopSpeed: 0.2
+      Acceleration: 0
+      Upgraded: 
+    tyre:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+  - NWH_Car: {fileID: 2474934569521429595, guid: f56839f08d660aa4c8aa0949af213d7a, type: 3}
+    NWH_Wheels:
+    - {fileID: 5813755157445031235, guid: b822820f06a7d5d4cacaebb1317dc519, type: 3}
+    - {fileID: 6566309648119053622, guid: 9c8802ba726d85349b504d1956cd6f9b, type: 3}
+    - {fileID: 3474768607666033086, guid: 6e5a684d0ec002e4985f928ceb067816, type: 3}
+    - {fileID: 86351396651771661, guid: e91b4c17ee6514c47858a6ed300c50b8, type: 3}
+    carNumber: 2
+    EngCount: 0
+    SuspCount: 0
+    TBCount: 0
+    EngImg:
+    - {fileID: 1379154969529120985, guid: 13f6de98b2a4ca14e979b60bb700a2b1, type: 3}
+    - {fileID: 1891371299725717589, guid: 3d547c955f1c5544f92138c73ed3b611, type: 3}
+    - {fileID: 4418043616002158845, guid: c217e2c5a68de7e4da937f5371d7b017, type: 3}
+    SuspImg:
+    - {fileID: 8202400935151591431, guid: a0a5f935a97f42641ae2c348e5c9da00, type: 3}
+    - {fileID: 1103425251903713925, guid: 29fffde8b3783374f955e62d7f44ebe5, type: 3}
+    - {fileID: 2305854311451901578, guid: e54eeada7f387114db5fc8f257f029f5, type: 3}
+    TBImg:
+    - {fileID: 3903747802220305672, guid: 1f72cf71dddd34448b39491e04d8f34a, type: 3}
+    - {fileID: 911177852994939295, guid: 977a819dabac27c4d994c579fe9f5bc2, type: 3}
+    - {fileID: 5223996410508918388, guid: 98fe773d5feca3640bdb83653961730e, type: 3}
+    EngBtn:
+    - {fileID: 5074036955748415152, guid: c2045e3a9291d444284e06320c79a76c, type: 3}
+    - {fileID: 3862166477037115784, guid: 9ce28ce900c5c924b80b4563ff852477, type: 3}
+    - {fileID: 183878658332200520, guid: b87c2762174f24241bf883a626715c53, type: 3}
+    SuspBtn:
+    - {fileID: 1553931304197720966, guid: 4dd5e714154bc164e844f2da373f55e5, type: 3}
+    - {fileID: 7776187312534287506, guid: 517570aaf4a05444189845423a28884c, type: 3}
+    - {fileID: 425894805728392170, guid: f2cef1b132622d8429bcebe8989a6851, type: 3}
+    TBBtn:
+    - {fileID: 6654609088113677278, guid: f1526b123420b9c4bb336e4fa5b9aa47, type: 3}
+    - {fileID: 8154654688974809759, guid: 8bf273c957f4f2b418fb5c95e5a1f494, type: 3}
+    - {fileID: 7792875670824864850, guid: 51260e69578cb864f89ed03f836d7b31, type: 3}
+    suspension:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      BrakeTorque: 1
+      Handling: 0.1
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      BrakeTorque: 2
+      Handling: 0.2
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      BrakeTorque: 3
+      Handling: 0.3
+      Upgraded: 
+    engine:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      TopSpeed: 0.8
+      Acceleration: 50
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      TopSpeed: 0.5
+      Acceleration: 10
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      TopSpeed: 0.25
+      Acceleration: 50
+      Upgraded: 
+    tyre:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      slipvalue: 0.3
+      gripvalue: 0.3
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+  - NWH_Car: {fileID: 2099695343876143005, guid: da59a6a7c8cb7d04584837b3a73b9c43, type: 3}
+    NWH_Wheels:
+    - {fileID: 175164225998187060, guid: 456c287e0a17ab3418ec3ccf88d3b126, type: 3}
+    - {fileID: 5643183542989060469, guid: 62245770aefb72e43a5e8a932ba9f2c7, type: 3}
+    - {fileID: 8223389385484660638, guid: 719786db1329e5c49b33813b57e81367, type: 3}
+    - {fileID: 2140275083969051943, guid: c37caeafc00c67645beaacfc2c833a29, type: 3}
+    carNumber: 3
+    EngCount: 0
+    SuspCount: 0
+    TBCount: 0
+    EngImg:
+    - {fileID: 1379154969529120985, guid: 13f6de98b2a4ca14e979b60bb700a2b1, type: 3}
+    - {fileID: 1891371299725717589, guid: 3d547c955f1c5544f92138c73ed3b611, type: 3}
+    - {fileID: 4418043616002158845, guid: c217e2c5a68de7e4da937f5371d7b017, type: 3}
+    SuspImg:
+    - {fileID: 8202400935151591431, guid: a0a5f935a97f42641ae2c348e5c9da00, type: 3}
+    - {fileID: 1103425251903713925, guid: 29fffde8b3783374f955e62d7f44ebe5, type: 3}
+    - {fileID: 2305854311451901578, guid: e54eeada7f387114db5fc8f257f029f5, type: 3}
+    TBImg:
+    - {fileID: 3903747802220305672, guid: 1f72cf71dddd34448b39491e04d8f34a, type: 3}
+    - {fileID: 911177852994939295, guid: 977a819dabac27c4d994c579fe9f5bc2, type: 3}
+    - {fileID: 5223996410508918388, guid: 98fe773d5feca3640bdb83653961730e, type: 3}
+    EngBtn:
+    - {fileID: 5074036955748415152, guid: c2045e3a9291d444284e06320c79a76c, type: 3}
+    - {fileID: 3862166477037115784, guid: 9ce28ce900c5c924b80b4563ff852477, type: 3}
+    - {fileID: 183878658332200520, guid: b87c2762174f24241bf883a626715c53, type: 3}
+    SuspBtn:
+    - {fileID: 1553931304197720966, guid: 4dd5e714154bc164e844f2da373f55e5, type: 3}
+    - {fileID: 7776187312534287506, guid: 517570aaf4a05444189845423a28884c, type: 3}
+    - {fileID: 425894805728392170, guid: f2cef1b132622d8429bcebe8989a6851, type: 3}
+    TBBtn:
+    - {fileID: 6654609088113677278, guid: f1526b123420b9c4bb336e4fa5b9aa47, type: 3}
+    - {fileID: 8154654688974809759, guid: 8bf273c957f4f2b418fb5c95e5a1f494, type: 3}
+    - {fileID: 7792875670824864850, guid: 51260e69578cb864f89ed03f836d7b31, type: 3}
+    suspension:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      BrakeTorque: 150
+      Handling: 1
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      BrakeTorque: 100
+      Handling: 2
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      BrakeTorque: 50
+      Handling: 3
+      Upgraded: 
+    engine:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      TopSpeed: 0.3
+      Acceleration: 20
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      TopSpeed: 0.4
+      Acceleration: 10
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      TopSpeed: 0.3
+      Acceleration: 20
+      Upgraded: 
+    tyre:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      slipvalue: 0.3
+      gripvalue: 0.3
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+  - NWH_Car: {fileID: 1662560054260810664, guid: ed8d1e0be2e90824cb3b48984f6cbc04, type: 3}
+    NWH_Wheels:
+    - {fileID: 475228492188871836, guid: c349494c2cc4c0b45a726a58f4bf6842, type: 3}
+    - {fileID: 1696589694549806444, guid: 58d6ce2fd02408445ba8722337a1d344, type: 3}
+    - {fileID: 3185994970608850691, guid: 23c443ae4566ee048b06f40bd601e463, type: 3}
+    - {fileID: 6196753184544635605, guid: a876c7aae638d8d42aa4c3a637368583, type: 3}
+    carNumber: 4
+    EngCount: 0
+    SuspCount: 0
+    TBCount: 0
+    EngImg:
+    - {fileID: 1379154969529120985, guid: 13f6de98b2a4ca14e979b60bb700a2b1, type: 3}
+    - {fileID: 1891371299725717589, guid: 3d547c955f1c5544f92138c73ed3b611, type: 3}
+    - {fileID: 4418043616002158845, guid: c217e2c5a68de7e4da937f5371d7b017, type: 3}
+    SuspImg:
+    - {fileID: 8202400935151591431, guid: a0a5f935a97f42641ae2c348e5c9da00, type: 3}
+    - {fileID: 1103425251903713925, guid: 29fffde8b3783374f955e62d7f44ebe5, type: 3}
+    - {fileID: 2305854311451901578, guid: e54eeada7f387114db5fc8f257f029f5, type: 3}
+    TBImg:
+    - {fileID: 3903747802220305672, guid: 1f72cf71dddd34448b39491e04d8f34a, type: 3}
+    - {fileID: 911177852994939295, guid: 977a819dabac27c4d994c579fe9f5bc2, type: 3}
+    - {fileID: 5223996410508918388, guid: 98fe773d5feca3640bdb83653961730e, type: 3}
+    EngBtn:
+    - {fileID: 5074036955748415152, guid: c2045e3a9291d444284e06320c79a76c, type: 3}
+    - {fileID: 3862166477037115784, guid: 9ce28ce900c5c924b80b4563ff852477, type: 3}
+    - {fileID: 183878658332200520, guid: b87c2762174f24241bf883a626715c53, type: 3}
+    SuspBtn:
+    - {fileID: 1553931304197720966, guid: 4dd5e714154bc164e844f2da373f55e5, type: 3}
+    - {fileID: 7776187312534287506, guid: 517570aaf4a05444189845423a28884c, type: 3}
+    - {fileID: 425894805728392170, guid: f2cef1b132622d8429bcebe8989a6851, type: 3}
+    TBBtn:
+    - {fileID: 6654609088113677278, guid: f1526b123420b9c4bb336e4fa5b9aa47, type: 3}
+    - {fileID: 8154654688974809759, guid: 8bf273c957f4f2b418fb5c95e5a1f494, type: 3}
+    - {fileID: 7792875670824864850, guid: 51260e69578cb864f89ed03f836d7b31, type: 3}
+    suspension:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      BrakeTorque: 150
+      Handling: 1
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      BrakeTorque: 100
+      Handling: 2
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      BrakeTorque: 50
+      Handling: 3
+      Upgraded: 
+    engine:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      TopSpeed: 0.3
+      Acceleration: 0
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      TopSpeed: 0.3
+      Acceleration: 0
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      TopSpeed: 0.7
+      Acceleration: 0
+      Upgraded: 
+    tyre:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      slipvalue: 0.3
+      gripvalue: 0.3
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+  - NWH_Car: {fileID: 8454617335735688396, guid: e5d2b59d6dfb6d14583e406acd614242, type: 3}
+    NWH_Wheels:
+    - {fileID: 7471046485148321017, guid: 41895a1925b97754981e61693f60603c, type: 3}
+    - {fileID: 5773979906297911450, guid: 053188dd0d6b3e14e9f28c9d4679d909, type: 3}
+    - {fileID: 3600628800936669231, guid: 88a400ceeadefc3489ec8e881fe3d563, type: 3}
+    - {fileID: 2709533359223683682, guid: cd1597b3cf226f74ba46a8603600e6e5, type: 3}
+    carNumber: 5
+    EngCount: 0
+    SuspCount: 0
+    TBCount: 0
+    EngImg:
+    - {fileID: 1379154969529120985, guid: 13f6de98b2a4ca14e979b60bb700a2b1, type: 3}
+    - {fileID: 1891371299725717589, guid: 3d547c955f1c5544f92138c73ed3b611, type: 3}
+    - {fileID: 4418043616002158845, guid: c217e2c5a68de7e4da937f5371d7b017, type: 3}
+    SuspImg:
+    - {fileID: 8202400935151591431, guid: a0a5f935a97f42641ae2c348e5c9da00, type: 3}
+    - {fileID: 1103425251903713925, guid: 29fffde8b3783374f955e62d7f44ebe5, type: 3}
+    - {fileID: 2305854311451901578, guid: e54eeada7f387114db5fc8f257f029f5, type: 3}
+    TBImg:
+    - {fileID: 3903747802220305672, guid: 1f72cf71dddd34448b39491e04d8f34a, type: 3}
+    - {fileID: 911177852994939295, guid: 977a819dabac27c4d994c579fe9f5bc2, type: 3}
+    - {fileID: 5223996410508918388, guid: 98fe773d5feca3640bdb83653961730e, type: 3}
+    EngBtn:
+    - {fileID: 5074036955748415152, guid: c2045e3a9291d444284e06320c79a76c, type: 3}
+    - {fileID: 3862166477037115784, guid: 9ce28ce900c5c924b80b4563ff852477, type: 3}
+    - {fileID: 183878658332200520, guid: b87c2762174f24241bf883a626715c53, type: 3}
+    SuspBtn:
+    - {fileID: 1553931304197720966, guid: 4dd5e714154bc164e844f2da373f55e5, type: 3}
+    - {fileID: 7776187312534287506, guid: 517570aaf4a05444189845423a28884c, type: 3}
+    - {fileID: 425894805728392170, guid: f2cef1b132622d8429bcebe8989a6851, type: 3}
+    TBBtn:
+    - {fileID: 6654609088113677278, guid: f1526b123420b9c4bb336e4fa5b9aa47, type: 3}
+    - {fileID: 8154654688974809759, guid: 8bf273c957f4f2b418fb5c95e5a1f494, type: 3}
+    - {fileID: 7792875670824864850, guid: 51260e69578cb864f89ed03f836d7b31, type: 3}
+    suspension:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      BrakeTorque: 150
+      Handling: 1
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      BrakeTorque: 100
+      Handling: 2
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      BrakeTorque: 50
+      Handling: 3
+      Upgraded: 
+    engine:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      TopSpeed: 0.2
+      Acceleration: 50
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      TopSpeed: 0.2
+      Acceleration: 20
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      TopSpeed: 0.9
+      Acceleration: 30
+      Upgraded: 
+    tyre:
+    - LevelNo: 1
+      Timer: 900
+      Coins: 1000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 2
+      Timer: 1800
+      Coins: 3000
+      Daimonds: 0
+      slipvalue: 0.1
+      gripvalue: 0.1
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 
+    - LevelNo: 3
+      Timer: 7200
+      Coins: 5000
+      Daimonds: 0
+      slipvalue: 0.3
+      gripvalue: 0.3
+      springlength: 0.03
+      Handling: 0.01
+      Upgraded: 

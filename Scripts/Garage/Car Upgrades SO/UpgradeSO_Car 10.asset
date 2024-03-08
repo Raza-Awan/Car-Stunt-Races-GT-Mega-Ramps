@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a11b73ac7be72b4d83b0223ab12bbd2, type: 3}
+  m_Name: UpgradeSO_Car 10
+  m_EditorClassIdentifier: 
+  carPower: 142
+  boxesToFill: 5
+  fillAmountsFront:
+  - 0.56
+  - 0.62
+  - 0.66
+  - 0.7
+  fillAmountsBack:
+  - 0.593
+  - 0.653
+  - 0.693
+  - 0.733
+  TS_CurrentVal: 99000000a1000000aa000000af000000
+  TS_NewVal: a1000000aa000000af000000af000000
+  XL_CurrentVal:
+  - 2.2
+  - 2.12
+  - 2.01
+  - 1.93
+  XL_NewVal:
+  - 2.12
+  - 2.01
+  - 1.93
+  - 1.93
+  PW_CurrentVal: 400100004e0100005a01000066010000
+  PW_NewVal: 4e0100005a0100006601000066010000
+  TQ_CurrentVal: 66000000710000007a00000083000000
+  TQ_NewVal: 710000007a0000008300000083000000
+  engName:
+  - 600 hp 5.76l W4
+  - '800 hp 8.92l Y4  '
+  - '800 hp 8.92l Y4  '
+  engType:
+  - '[STREET]'
+  - '[SPORT]'
+  - '[MAX]'
+  applyEngUpg: 000000
+  maxPowerVal: 64000000780000008c000000a0000000
+  tireName:
+  - Yakohana
+  - MagmaStone
+  - MagmaStone
+  tireType:
+  - '[STREET]'
+  - '[SPORT]'
+  - '[MAX]'
+  applyTireUpg: 000000
+  maxSpringLengths:
+  - 0.4
+  - 0.44
+  - 0.48
+  - 0.53
+  inertias:
+  - 0.2
+  - 0.16
+  - 0.128
+  - 0.1024
+  SpName:
+  - sky scraper w20
+  - sky scraper Y36
+  - sky scraper Y36
+  SpType:
+  - '[STREET]'
+  - '[SPORT]'
+  - '[MAX]'
+  applySpUpg: 000000
+  maxBrakeTorques: 60040000f00500008007000010090000
+  div2_Amount1: 2.2
+  div2_Amount2: 320
+  div2_Amount3: 153
